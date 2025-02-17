@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex">
+    <title>Gestione Componenti Elettronici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1 class="titolo">Gestione Componenti Elettronici</h1>
+    <div class="azioni">
+        <button id="newRecord" class="button">Nuovo</button>
+        <button id="editRecord" class="button">Modifica</button>
+        <button id="saveRecord" class="button">Salva</button>
+        <button id="delRecord" class="button">Elimina</button>
+        <button id="cancelOP" class="button">Annulla</button>
+        <button id="import" class="button">Importa</button>
+        <button id="export" class="button">Esporta</button>
+        <button id="print" class="button">Stampa</button>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+    <div class="search-bar">
+        <input id="srch" type="text" placeholder="Cerca componente...">
+        <button id="trova">Cerca</button>
+    </div>
+
+    <div class="elenco">
+        <div class="titoli">
+            <ul>
+                <li>CODICE</li>
+                <li>TIPO</li>
+                <li>MARCA</li>
+                <li>QTA</li>
+                <li>PIN</li>
+            </ul>
+        </div>
+        <div class="lista" id="listaRecords">
+            <!-- I record verranno aggiunti dinamicamente qui -->
+        </div>
+    </div>
+
+    <div class="campi">
+        <div class="row">
+            <div class="etichetta">Codice</div>
+            <div class="valore"><input id="codice" type="text"></div>
+            <div class="etichetta">Quantità</div>
+            <div class="valore"><input id="qta" type="text"></div>
+        </div>
+        <div class="row">
+            <div class="etichetta">Marca</div>
+            <div class="valore"><select id="cmbMarca"></select></div>
+            <div class="etichetta">Tipo</div>
+            <div class="valore"><select id="cmbTipo"></select></div>
+        </div>
+        <div class="row">
+            <div class="etichetta">Package</div>
+            <div class="valore"><select id="cmbPackage"></select></div>
+            <div class="etichetta">Pin</div>
+            <div class="valore"><input id="pins" type="text"></div>
+        </div>
+        <div class="row">
+            <div class="etichetta">Descrizione</div>
+            <div class="valore"><textarea id="descrizione"></textarea></div>
+        </div>
+        <div class="row">
+            <div class="etichetta">Note</div>
+            <div class="valore"><textarea id="note"></textarea></div>
+        </div>
+        <div class="row">
+            <div class="etichetta">Pozione</div>
+            <div class="valore"><input id="pozione" type="text"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="info">
+        <p>Benvenuto in Gestione Componenti Elettronici</p>
+        <p>Versione: <span id="version">1.0</span></p>
+        <p>Diritti riservati a Mario Scioli</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
