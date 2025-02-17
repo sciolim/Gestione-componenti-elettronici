@@ -1,0 +1,150 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.header .titolo {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Colore del titolo */
+}
+
+.header .azioni button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header .azioni button:hover {
+    background-color: #004080;
+}
+
+/* Main Content */
+.main {
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #218838;
+}
+
+.elenco {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.titoli ul,
+.lista ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.titoli li,
+.lista li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.titoli li {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.campi {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.campi .row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.campi .etichetta {
+    flex: 1;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+}
+
+.campi .valore {
+    flex: 3;
+    padding: 10px;
+}
+
+.campi input,
+.campi select,
+.campi textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campi textarea {
+    height: 100px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .info p {
+    margin: 5px 0;
+}
